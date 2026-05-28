@@ -1,5 +1,4 @@
 # Cass-Sensor
-Caso de Uso de Sistema de Log de Sensores IoT
 
 Este projeto demonstra uma integração simples entre uma aplicação Python e um banco de dados NoSQL **Apache Cassandra**, utilizando **Docker** para padronização do ambiente.
 
