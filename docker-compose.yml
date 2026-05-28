@@ -1,0 +1,14 @@
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra-db
+    ports:
+      - "9042:9042"
+
+  app:
+    build: .
+    container_name: app-integracao
+    depends_on:
+      - cassandra
+    environment:
+      - CASSANDRA_HOST=cassandra-db
